@@ -679,7 +679,7 @@ class IPA:
         self,
         progress: Optional[Callable[[float, int, int, bool], None]] = progress,
         force: bool = False,
-        apk_list_url: str = "https://raw.githubusercontent.com/fieryhenry/BCData/master/apk_list.json",
+        apk_list_url: str = "https://raw.githubusercontent.com/cintagram/BCipa/master/ipa_list.json",
     ) -> bool:
         if self.apk_path.exists() and not force:
             return True
@@ -714,8 +714,7 @@ class IPA:
         progress: Optional[Callable[[float, int, int, bool], None]] = progress,
         force: bool = False,
     ) -> bool:
-        if self.download_v1(progress, force):
-            return True
+        #erased v1 since i cant implement that function to ipa
         if self.download_v2(progress, force):
             return True
         return False
