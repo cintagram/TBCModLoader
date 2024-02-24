@@ -8,7 +8,7 @@ import filecmp
 import tbcml
 
 
-class Apk:
+class IPA:
     def __init__(
         self,
         game_version: "tbcml.GV",
