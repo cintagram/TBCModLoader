@@ -72,6 +72,7 @@ from .io.csv_fields import (
     StrListCSVField,
     StrTupleCSVField,
 )
+from .io.ipa import IPA
 from .io.apk import Apk
 from .io.path import Path, PathStr
 from .io.data import Data, PaddedInt
@@ -181,6 +182,7 @@ __all__ = [
     "CSV",
     "Delimeter",
     "to_str",
+    "IPA",
     "Apk",
     "Path",
     "PathStr",
